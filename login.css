@@ -137,18 +137,19 @@ h1 {
     background-color: rgb(76, 74, 205);
     font-size: large;
     cursor: pointer;
-    color: white;
-    background: linear-gradient(135deg, #4c4acd, #6a11cb);
+    color: rgb(241, 244, 246);
+    background: linear-gradient(90deg, #3e0288 0%, #9865ed 50%, #3c1dc7 100%);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     border: none;
     outline: none;
 }
 #sign-in:hover {
     transform: translateY(-2px); 
-    box-shadow: 0 6px 20px rgba(155, 118, 194, 0.6), 0 0 12px rgba(0, 210, 255, 0.4);
+    box-shadow: 0 6px 20px rgba(127, 56, 203, 0.306), 0 0 12px rgba(112, 161, 173, 0.161);
 }
 #sign-in:active {
     transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 #other_options{
   display: flex;
@@ -157,13 +158,15 @@ h1 {
   width: 100%;
 }  
 #other_options a {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     color: aliceblue;
     text-decoration: none;
 }
 #other_options a:hover{
     text-decoration: underline;
+    color: #7d70f7;
+    text-shadow: 0 0 5px rgba(0, 208, 255, 0.36);
 }
 #accemail:focus, #pass:focus {
     border-color: #00d2ff;
