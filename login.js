@@ -56,10 +56,6 @@ form.addEventListener("submit",async (e)=>{
     accemail.disabled = false;
     pass.disabled = false;
 }
-
-
-    console.log(emailval);
-    console.log(passval);
 });
 
 function updatebutton(){
