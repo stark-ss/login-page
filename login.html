@@ -19,7 +19,8 @@
          autocomplete="email" 
          placeholder="e-mail" 
          id="accemail"
-         required ><br>
+         required >
+         <span id="emailmsg"></span><br>
          </div>
          <!--password-->
          <div id="password_input">
@@ -31,11 +32,12 @@
          id="pass"
          minlength="5"
          required>
-         <button type="button" title="show password" id="show-button"><i class="fa-regular fa-eye"></i></button>
+         <button type="button" title="show password" id="show-button"><i class="fa-regular
+         fa-eye" id="toggleicon"></i></button>
          </div>
          <br>
          </div>
-         <button type="submit" title="SIGN IN" id="sign-in"> SIGN IN </button><br>
+         <button type="submit" title="SIGN IN" id="sign_in" disabled> SIGN IN </button><br>
          <!--other options-->
          <div id="other_options">
          <a href="comingsoon.html">Forgot Password</a> 
@@ -43,6 +45,6 @@
          </div>
     </form>
  </main>
-    
+    <script src="login.js"></script>
 </body>
 </html>

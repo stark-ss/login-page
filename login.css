@@ -3,6 +3,7 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url(grey.jpg);
     background-size: cover;
+
     color: aliceblue;
 }
 
@@ -31,7 +32,10 @@ h1 {
     gap: 20px;
     align-items: center;
 }
+
 #accemail{
+    font-size: 15px;
+    position: relative;
     font-weight: 1000;
     height: 40px;
     width: 300px;
@@ -47,9 +51,13 @@ h1 {
     padding-left: 15px;
     padding-right: 15px;
 }
+
 #accemail::placeholder{
     color: white;
     opacity: 1;
+}
+#emailmsg{
+    position: absolute;
 }
 #email-label{
     font-size: 20px;
@@ -60,11 +68,13 @@ h1 {
     cursor: pointer;
 }
 #password_input{
+    
     position: relative;
     width: 100%;
     margin: 0 auto;
 }
 #pass{
+    font-size: 15px;
     font-weight: 1000;
     height: 40px;
     width: 300px;
@@ -127,7 +137,7 @@ h1 {
 #show-button:hover {
     color: #00d2ff; 
 }
-#sign-in{
+#sign_in{
     font-weight: bolder;
     width: 200px;
     height: 35px;
@@ -137,20 +147,27 @@ h1 {
     background-color: rgb(76, 74, 205);
     font-size: large;
     cursor: pointer;
-    color: rgb(241, 244, 246);
-    background: linear-gradient(90deg, #3e0288 0%, #9865ed 50%, #3c1dc7 100%);
+    color: white;
+    background: linear-gradient(135deg, #4c4acd, #6a11cb);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     border: none;
     outline: none;
 }
-#sign-in:hover {
+#sign_in:hover {
     transform: translateY(-2px); 
-    box-shadow: 0 6px 20px rgba(127, 56, 203, 0.306), 0 0 12px rgba(112, 161, 173, 0.161);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6), 0 0 12px rgba(0, 0, 0, 0.4);
 }
-#sign-in:active {
+#sign_in:active {
     transform: translateY(0);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
+#sign_in:disabled {
+    cursor: not-allowed;
+    opacity: 1;
+    transform: none;
+    box-shadow: 0px 3px 7px black;
+}
+
+
 #other_options{
   display: flex;
   justify-content: center;
@@ -158,7 +175,7 @@ h1 {
   width: 100%;
 }  
 #other_options a {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: aliceblue;
     text-decoration: none;
@@ -167,6 +184,7 @@ h1 {
     text-decoration: underline;
     color: #7d70f7;
     text-shadow: 0 0 5px rgba(0, 208, 255, 0.36);
+
 }
 #accemail:focus, #pass:focus {
     border-color: #00d2ff;
